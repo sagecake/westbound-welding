@@ -35,8 +35,8 @@ export default function Home() {
     gridTemplateColumns: isSmallMobile
       ? "1fr"
       : isMobile
-      ? "repeat(2, 1fr)"
-      : "repeat(4, 1fr)",
+        ? "repeat(2, 1fr)"
+        : "repeat(4, 1fr)",
     gap: isMobile ? "12px" : "20px",
   };
 
@@ -111,9 +111,22 @@ export default function Home() {
           boxSizing: "border-box",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: isMobile ? "8px" : 0 }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px",
+            marginBottom: isMobile ? "8px" : 0,
+          }}
+        >
           <img src="/welder.png" alt="logo" style={{ width: isMobile ? "30px" : "34px" }} />
-          <div style={{ fontWeight: "bold", letterSpacing: "2px", fontSize: isMobile ? "14px" : "16px" }}>
+          <div
+            style={{
+              fontWeight: "bold",
+              letterSpacing: "2px",
+              fontSize: isMobile ? "14px" : "16px",
+            }}
+          >
             WESTBOUND
           </div>
         </div>
@@ -127,19 +140,31 @@ export default function Home() {
             width: isMobile ? "100%" : "auto",
           }}
         >
-          <a href="#" style={navLink}>Home</a>
-          <a href="#about" style={navLink}>About</a>
-          <a href="#services" style={navLink}>Services</a>
-          <a href="#gallery" style={navLink}>Gallery</a>
-          <a href="#quote" style={navLink}>Quote</a>
-          <a href="#contact" style={navLink}>Contact</a>
+          <a href="#" style={navLink}>
+            Home
+          </a>
+          <a href="#about" style={navLink}>
+            About
+          </a>
+          <a href="#services" style={navLink}>
+            Services
+          </a>
+          <a href="#gallery" style={navLink}>
+            Gallery
+          </a>
+          <a href="#quote" style={navLink}>
+            Quote
+          </a>
+          <a href="#contact" style={navLink}>
+            Contact
+          </a>
         </div>
       </nav>
 
-      {/* HERO */}
+      {/* HERO TEXT */}
       <section
         style={{
-          padding: isMobile ? "180px 16px 40px" : "180px 20px 50px",
+          padding: isMobile ? "180px 16px 30px" : "180px 20px 30px",
           textAlign: "center",
           position: "relative",
         }}
@@ -155,10 +180,23 @@ export default function Home() {
           WESTBOUND WELDING
         </h1>
 
-        <p style={{ fontSize: isMobile ? "16px" : "18px", lineHeight: 1.5, margin: 0 }}>
+        <p
+          style={{
+            fontSize: isMobile ? "16px" : "18px",
+            lineHeight: 1.5,
+            margin: 0,
+          }}
+        >
           Custom Fabrication • CNC Cutting • Mobile Welding
         </p>
-        <p style={{ fontSize: isMobile ? "15px" : "16px", lineHeight: 1.5, marginTop: "10px" }}>
+
+        <p
+          style={{
+            fontSize: isMobile ? "15px" : "16px",
+            lineHeight: 1.5,
+            marginTop: "10px",
+          }}
+        >
           Moose Jaw • Regina • Surrounding Areas
         </p>
 
@@ -176,7 +214,12 @@ export default function Home() {
       </section>
 
       {/* HERO BUTTONS */}
-      <section style={{ padding: isMobile ? "10px 16px 40px" : "10px 20px 50px", textAlign: "center" }}>
+      <section
+        style={{
+          padding: isMobile ? "10px 16px 40px" : "10px 20px 50px",
+          textAlign: "center",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -222,11 +265,21 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" style={{ padding: isMobile ? "60px 16px" : "80px 20px", textAlign: "center" }}>
+      <section
+        id="about"
+        style={{ padding: isMobile ? "60px 16px" : "80px 20px", textAlign: "center" }}
+      >
         <h2 style={sectionTitle}>ABOUT</h2>
         <div style={sectionLine} />
 
-        <div style={{ maxWidth: "800px", margin: "0 auto", lineHeight: "1.8", fontSize: isMobile ? "15px" : "16px" }}>
+        <div
+          style={{
+            maxWidth: "800px",
+            margin: "0 auto",
+            lineHeight: "1.8",
+            fontSize: isMobile ? "15px" : "16px",
+          }}
+        >
           <p>
             I run Westbound Welding out of Moose Jaw, providing custom fabrication, CNC cutting,
             and mobile welding services across southern Saskatchewan.
@@ -252,7 +305,10 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" style={{ padding: isMobile ? "60px 16px" : "80px 20px", textAlign: "center" }}>
+      <section
+        id="services"
+        style={{ padding: isMobile ? "60px 16px" : "80px 20px", textAlign: "center" }}
+      >
         <h2 style={sectionTitle}>SERVICES</h2>
         <div style={sectionLine} />
 
@@ -272,14 +328,30 @@ export default function Home() {
         <div style={sectionLine} />
 
         <div style={grid}>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work1.jpg" alt="work1" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work2.jpg" alt="work2" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work3.jpg" alt="work3" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work4.jpg" alt="work4" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work5.jpg" alt="work5" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work6.jpg" alt="work6" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work7.jpg" alt="work7" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/work8.jpg" alt="work8" style={imageStyle} /></div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work1.jpg" alt="work1" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work2.jpg" alt="work2" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work3.jpg" alt="work3" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work4.jpg" alt="work4" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work5.jpg" alt="work5" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work6.jpg" alt="work6" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work7.jpg" alt="work7" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/work8.jpg" alt="work8" style={imageStyle} />
+          </div>
         </div>
 
         <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
@@ -308,10 +380,18 @@ export default function Home() {
         </p>
 
         <div style={grid}>
-          <div className="hover-wrap" style={hoverWrap}><img src="/fireplace1.jpg" alt="fireplace1" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/fireplace2.jpg" alt="fireplace2" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/fireplace3.jpg" alt="fireplace3" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/fireplace4.jpg" alt="fireplace4" style={imageStyle} /></div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/fireplace1.jpg" alt="fireplace1" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/fireplace2.jpg" alt="fireplace2" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/fireplace3.jpg" alt="fireplace3" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/fireplace4.jpg" alt="fireplace4" style={imageStyle} />
+          </div>
         </div>
       </section>
 
@@ -334,10 +414,18 @@ export default function Home() {
         </p>
 
         <div style={grid}>
-          <div className="hover-wrap" style={hoverWrap}><img src="/attachment1.jpg" alt="attachment1" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/attachment2.jpg" alt="attachment2" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/attachment3.jpg" alt="attachment3" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/attachment4.jpg" alt="attachment4" style={imageStyle} /></div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/attachment1.jpg" alt="attachment1" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/attachment2.jpg" alt="attachment2" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/attachment3.jpg" alt="attachment3" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/attachment4.jpg" alt="attachment4" style={imageStyle} />
+          </div>
         </div>
 
         <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
@@ -366,6 +454,178 @@ export default function Home() {
         </p>
 
         <div style={grid}>
-          <div className="hover-wrap" style={hoverWrap}><img src="/handrail1.jpg" alt="handrail1" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hoverWrap}><img src="/handrail2.jpg" alt="handrail2" style={imageStyle} /></div>
-          <div className="hover-wrap" style={hover
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail1.jpg" alt="handrail1" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail2.jpg" alt="handrail2" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail3.jpg" alt="handrail3" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail4.jpg" alt="handrail4" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail5.jpg" alt="handrail5" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail6.jpg" alt="handrail6" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail7.jpg" alt="handrail7" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail8.jpg" alt="handrail8" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail9.jpg" alt="handrail9" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail10.jpg" alt="handrail10" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail11.jpg" alt="handrail11" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail12.jpg" alt="handrail12" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail13.jpg" alt="handrail13" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail14.jpg" alt="handrail14" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail15.jpg" alt="handrail15" style={imageStyle} />
+          </div>
+          <div className="hover-wrap" style={hoverWrap}>
+            <img src="/handrail16.jpg" alt="handrail16" style={imageStyle} />
+          </div>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
+          <div className="hover-wrap" style={{ ...hoverWrap, maxWidth: isMobile ? "100%" : "400px" }}>
+            <img src="/handrail17.jpg" alt="handrail17" style={imageStyle} />
+          </div>
+        </div>
+      </section>
+
+      {/* QUOTE FORM */}
+      <section id="quote" style={{ padding: isMobile ? "60px 16px" : "80px 20px" }}>
+        <h2 style={sectionTitle}>REQUEST A QUOTE</h2>
+        <div style={sectionLine} />
+
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <form action="https://formspree.io/f/mjgjydww" method="POST">
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                gap: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <div>
+                <label style={labelStyle}>Name</label>
+                <input type="text" name="name" style={inputStyle} />
+              </div>
+
+              <div>
+                <label style={labelStyle}>Phone</label>
+                <input type="tel" name="phone" style={inputStyle} />
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+                gap: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <div>
+                <label style={labelStyle}>Email</label>
+                <input type="email" name="email" style={inputStyle} />
+              </div>
+
+              <div>
+                <label style={labelStyle}>City</label>
+                <input type="text" name="city" style={inputStyle} />
+              </div>
+            </div>
+
+            <div style={{ marginBottom: "20px" }}>
+              <label style={labelStyle}>What do you need done?</label>
+              <textarea name="details" rows={6} style={inputStyle} />
+            </div>
+
+            <div style={{ marginBottom: "20px" }}>
+              <label style={labelStyle}>Preferred contact method</label>
+              <select name="contactMethod" style={inputStyle}>
+                <option>Phone</option>
+                <option>Email</option>
+                <option>Text</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              style={{
+                padding: "14px 32px",
+                background: "#ffffff",
+                color: "#000",
+                border: "none",
+                fontWeight: "bold",
+                cursor: "pointer",
+                width: isMobile ? "100%" : "auto",
+              }}
+            >
+              Submit Quote Request
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section
+        id="contact"
+        style={{ padding: isMobile ? "60px 16px" : "80px 20px", textAlign: "center" }}
+      >
+        <h2 style={sectionTitle}>CONTACT</h2>
+        <div style={sectionLine} />
+
+        <p>(306) 690-4304</p>
+        <p>westboundwelding@gmail.com</p>
+        <p style={{ marginTop: "15px" }}>24/7 Mobile Welding Available</p>
+
+        <div style={{ display: "flex", justifyContent: "center", gap: "18px", marginTop: "28px" }}>
+          <a
+            href="https://www.instagram.com/westboundwelding/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            style={socialIconWrap}
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.9 1.15a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" />
+            </svg>
+          </a>
+
+          <a
+            href="https://www.facebook.com/100089029080954/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+            style={socialIconWrap}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.5V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.5v8h3Z" />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+  );
+}
