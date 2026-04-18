@@ -200,7 +200,14 @@ export default function Home() {
           Moose Jaw • Regina • Surrounding Areas
         </p>
 
-        <div style={{ marginTop: isMobile ? "28px" : "35px" }}>
+        <div
+          style={{
+            marginTop: isMobile ? "28px" : "35px",
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <img
             src="/welder.png"
             alt="welder logo"
@@ -208,6 +215,7 @@ export default function Home() {
               width: isMobile ? "220px" : "320px",
               maxWidth: "80%",
               opacity: 0.95,
+              display: "block",
             }}
           />
         </div>
